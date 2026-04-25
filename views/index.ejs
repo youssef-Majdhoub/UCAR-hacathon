@@ -1,61 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title><%= title %></title>
+    
+    <link rel="icon" type="image/png" href="/images/logo-ucar.png">
+    
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 <body>
 
     <header>
-        <a href="/" class="logo">
-        <img src="/images/logo-ucar.png" alt="UCAR Logo">
+    <a href="/" class="logo">
+        <img src="/images/logo-ucar.png" alt="Logo UCAR">
     </a>
+    
+    <nav class="nav-links">
+        <a href="#" class="nav-item">Accueil</a>
+        <a href="#" class="nav-item">À propos</a>
+        <a href="#" class="nav-item">Programmes Académiques</a>
         
-        <nav class="nav-links">
-            <a href="#">Institution</a>
-            <a href="#">University of UCAR</a>
-            <a href="#">Student Life</a>
-        </nav>
-
-        <div class="right-nav">
-            <span class="search-icon">🔍</span>
-            <a href="#" class="log-in">Sign in</a>
+        <div class="dropdown">
+            <a href="#" class="dropbtn">Institution</a>
+            <div class="dropdown-content">
+                <a href="#">académique</a>
+                <a href="#">vie étudiante</a>
+                <a href="#">finances</a>
+                <a href="#">ressources humaines</a>
+                <a href="#">ESG & RSE</a>
+                <a href="#">infrastructure</a>
+                <a href="#">recherche et formation</a>
+                <a href="#">partenariats</a>
+                <a href="#">insertion professionnelle des diplômés</a>
+            </div>
         </div>
-    </header>
+        
+        <div class="dropdown">
+            <a href="#" class="dropbtn">Université de l'UCAR</a>
+            <div class="dropdown-content">
+                <a href="#">gestion de base de données</a>
+                <a href="#">menu des KPI</a>
+            </div>
+        </div>
+        
+        <div class="dropdown">
+            <a href="#" class="dropbtn">Vie Étudiante</a>
+            <div class="dropdown-content">
+                <a href="#">Inscription</a>
+                <a href="#">Clubs</a>
+                <a href="#">Stages</a>
+            </div>
+        </div>
+
+        <a href="#" class="nav-item">Excellence en Recherche</a>
+        <a href="#" class="nav-item">Partenariats Mondiaux</a>
+        <a href="#" class="nav-item">Actualités</a>
+    </nav>
+
+    <div class="right-nav">
+        <a href="#" class="log-in">Se connecter</a>
+    </div>
+</header>
 
     <section class="hero">
         <div class="hero-left">
-            <h1 class="hero-title">admissions'<%= year %></h1>
+            <h1 class="hero-title">admissions <%= year %></h1>
             
             <div class="hero-meta">
-                <span class="badge">📅 Open Now</span>
-                <span class="badge">📍 Main Campus and online</span>
+                <span class="badge">📅 Ouvert Maintenant</span>
+                <span class="badge">📍 Campus Principal et en ligne</span>
             </div>
 
-            <h2 class="hero-subtitle">Unlock your academic potential at scale</h2>
+            <h2 class="hero-subtitle">Libérez votre potentiel académique à grande échelle</h2>
             <p class="hero-desc">
-                Join our global community of forward-thinking students, researchers, and the innovative programs that fuel them.
+                Rejoignez notre communauté mondiale d'étudiants, de chercheurs avant-gardistes et les programmes innovants qui les animent.
             </p>
 
             <div class="hero-actions">
-                <a href="#" class="btn-primary">Apply now</a>
-                <a href="#" class="btn-secondary">See academic agenda &rarr;</a>
+                <a href="#" class="btn-primary">Postuler maintenant</a>
+                <a href="#" class="btn-secondary">Voir l'agenda académique &rarr;</a>
             </div>
         </div>
 
         <div class="hero-right">
-            <div class="glass-card">
-                <h3>Campus Life Showcase</h3>
-                <p>Image Placeholder</p>
-            </div>
+            <img src="/images/campus-showcase.jpg" alt="Campus UCAR" class="hero-image">
+            <div class="image-caption">APERÇU DE LA VIE SUR LE CAMPUS</div>
         </div>
     </section>
 
     <section class="bottom-section">
-        <h2 class="bottom-title">Unleash your academic superteam</h2>
+        <h2 class="bottom-title">Libérez votre super-équipe académique</h2>
     </section>
 
 </body>
