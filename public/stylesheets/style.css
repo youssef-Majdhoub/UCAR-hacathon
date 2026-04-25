@@ -28,6 +28,10 @@ header {
     text-decoration: none;
     transition: transform 0.2s ease;
 }
+.logo img {
+    height: 40px; /* Adjust this number to make it bigger or smaller */
+    width: auto;
+}
 
 .logo:hover {
     transform: scale(1.05);
