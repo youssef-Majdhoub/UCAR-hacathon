@@ -35,6 +35,10 @@ app.get('/institution_academic_intermediate', function(req, res) {
 app.get('/institution_student_life_intermediate', function(req, res) {
   res.render('institution_student_life_intermediate');
 });
+// Route for the Finance Intermediate Page
+app.get('/institution_finance_intermediate', function(req, res) {
+  res.render('institution_finance_intermediate');
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
