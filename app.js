@@ -39,6 +39,34 @@ app.get('/institution_student_life_intermediate', function(req, res) {
 app.get('/institution_finance_intermediate', function(req, res) {
   res.render('institution_finance_intermediate');
 });
+// Route for the HR Intermediate Page
+app.get('/institution_hr_intermediate', function(req, res) {
+  res.render('institution_hr_intermediate');
+});
+// Route for the ESG Intermediate Page
+app.get('/institution_esg_intermediate', function(req, res) {
+  res.render('institution_esg_intermediate');
+});
+// Route for the Infrastructure Intermediate Page
+app.get('/institution_infrastructure_intermediate', function(req, res) {
+  res.render('institution_infrastructure_intermediate');
+});
+// Route for the Research Intermediate Page
+app.get('/institution_research_intermediate', function(req, res) {
+  res.render('institution_research_intermediate');
+});
+// Route for the Partnerships Intermediate Page
+app.get('/institution_partnerships_intermediate', function(req, res) {
+  res.render('institution_partnerships_intermediate');
+});
+// Route for Employment / Insertion Professionnelle
+app.get('/institution_employment_intermediate', function(req, res) {
+  res.render('institution_employment_intermediate');
+});
+// Route for the KPI Menu Intermediate Page
+app.get('/kpi_menu_intermediate', function(req, res) {
+  res.render('kpi_menu_intermediate');
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

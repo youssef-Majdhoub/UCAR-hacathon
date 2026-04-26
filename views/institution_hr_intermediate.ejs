@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= typeof title !== 'undefined' ? title : 'Ressources Humaines' %></title>
+    
+    <link rel="icon" type="image/png" href="/images/logo-ucar.png">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+
+    <header>
+        <a href="/" class="logo">
+            <img src="/images/logo-ucar.png" alt="Logo Université de Carthage">
+        </a>
+        <nav class="nav-links">
+            <a href="/" class="nav-item">ACCUEIL</a>
+            <a href="/about" class="nav-item">À PROPOS</a>
+            <a href="/programmes" class="nav-item">PROGRAMMES ACADÉMIQUES</a>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">INSTITUTION</a>
+                <div class="dropdown-content">
+                    <a href="/institution_academic_intermediate">ACADÉMIQUES</a>
+                    <a href="/institution_student_life_intermediate">VIE ÉTUDIANTE</a>
+                    <a href="/institution_finance_intermediate">FINANCES</a>
+                    <a href="/institution_hr_intermediate">RESSOURCES HUMAINES</a>
+                    <a href="/research">EXCELLENCE EN RECHERCHE</a>
+                    <a href="/partnerships">PARTENARIATS MONDIAUX</a>
+                </div>
+            </div>
+            <a href="/news" class="nav-item">ACTUALITÉS</a>
+        </nav>
+        <div class="right-nav">
+            <a href="/login" class="log-in">SE CONNECTER</a>
+        </div>
+    </header>
+
+    <div class="intermediate-container">
+        <h2 class="page-title">Ressources Humaines</h2>
+        <p class="page-subtitle">Portail administratif pour la gestion du personnel, des plannings et des formations</p>
+        
+        <div class="action-cards">
+            <a href="/hr-staff" class="action-card">
+                <div class="card-icon">👥</div>
+                <h3>Gestion du Personnel</h3>
+                <p>Gérez les effectifs enseignants et administratifs, les recrutements et les départs.</p>
+            </a>
+
+            <a href="/hr-attendance" class="action-card">
+                <div class="card-icon">📅</div>
+                <h3>Présences et Plannings</h3>
+                <p>Suivez les taux d'absentéisme, les congés et la charge d'enseignement.</p>
+            </a>
+
+            <a href="/hr-training" class="action-card">
+                <div class="card-icon">🎓</div>
+                <h3>Formations</h3>
+                <p>Saisissez et validez les sessions de formation continue complétées par le personnel.</p>
+            </a>
+
+            <a href="/hr-analytics" class="action-card primary-card">
+                <div class="card-icon">📈</div>
+                <h3>Analyser</h3>
+                <p>Consultez la stabilité des équipes, la charge de travail et les statistiques RH globales.</p>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
