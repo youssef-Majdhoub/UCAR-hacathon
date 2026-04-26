@@ -280,33 +280,39 @@ header {
     color: #0A1128;
 }
 /* =========================================================
-   SHARED INTERMEDIATE CARDS TEMPLATE
+   SHARED INTERMEDIATE CARDS TEMPLATE (FORMAL OFFICE STYLE)
    (Use this for Academics, Student Life, etc.)
    ========================================================= */
 
 .intermediate-container {
     padding: 80px 5%;
     text-align: center;
-    background-color: #F8F9FA;
+    /* Formal corporate slate-blue gradient */
+    background: linear-gradient(135deg, #EDF2F7 0%, #E2E8F0 100%);
+    /* Subtle technical grid pattern for an "office/dashboard" feel */
+    background-image: radial-gradient(#CBD5E1 1px, transparent 1px);
+    background-size: 20px 20px;
     min-height: 60vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-top: 1px solid #CBD5E1;
 }
 
 .intermediate-container .page-title {
     font-size: 42px;
     font-weight: 900;
-    color: #0A1128;
+    color: #0F172A; /* Darker, more formal navy/slate */
     margin-bottom: 10px;
     letter-spacing: -1px;
 }
 
 .intermediate-container .page-subtitle {
-    color: #42526E;
+    color: #475569;
     font-size: 18px;
     margin-bottom: 50px;
+    font-weight: 500;
 }
 
 .action-cards {
@@ -317,51 +323,52 @@ header {
     max-width: 1100px;
 }
 
-/* Base Card Style */
+/* Base Card Style - Refined for a corporate look */
 .action-card {
     background: #ffffff;
-    border-radius: 16px;
-    padding: 50px 30px;
+    border-radius: 12px; /* Sharper, more formal corners */
+    padding: 40px 30px;
     width: 320px;
     text-decoration: none;
-    color: #172B4D;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+    color: #1E293B;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-    border: 2px solid transparent;
+    border: 1px solid #E2E8F0; /* Subtle formal border */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .action-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 30px rgba(0, 82, 204, 0.12);
-    border-color: #0052CC;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.1);
+    border-color: #3B82F6; /* Professional blue highlight on hover */
 }
 
 .action-card .card-icon {
-    font-size: 48px;
-    margin-bottom: 25px;
+    font-size: 42px; /* Slightly smaller, more refined size */
+    margin-bottom: 20px;
 }
 
 .action-card h3 {
-    font-size: 22px;
-    margin-bottom: 15px;
-    color: #0A1128;
-    font-weight: 800;
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #0F172A;
+    font-weight: 700;
 }
 
 .action-card p {
-    font-size: 15px;
-    color: #42526E;
+    font-size: 14px;
+    color: #475569;
     line-height: 1.6;
 }
 
 /* The Primary Card - Styled to stand out (e.g., Analytics) */
 .action-card.primary-card {
-    background: linear-gradient(135deg, #0A1128 0%, #172B4D 100%);
+    background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
     color: white;
-    box-shadow: 0 8px 25px rgba(10, 17, 40, 0.3);
+    border: 1px solid transparent;
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.2);
 }
 
 .action-card.primary-card h3 {
@@ -369,10 +376,10 @@ header {
 }
 
 .action-card.primary-card p {
-    color: #A0AABF;
+    color: #94A3B8;
 }
 
 .action-card.primary-card:hover {
-    border-color: #FFC400; /* UCAR yellow highlight on hover */
-    box-shadow: 0 15px 35px rgba(10, 17, 40, 0.4);
+    border-color: #3B82F6; 
+    box-shadow: 0 12px 28px rgba(15, 23, 42, 0.3);
 }
